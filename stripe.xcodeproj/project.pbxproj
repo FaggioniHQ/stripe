@@ -17,6 +17,12 @@
 		05CA093C2996CC9900980F0F /* stripeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA093B2996CC9900980F0F /* stripeTests.swift */; };
 		05CA09462996CC9900980F0F /* stripeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09452996CC9900980F0F /* stripeUITests.swift */; };
 		05CA09482996CC9900980F0F /* stripeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09472996CC9900980F0F /* stripeUITestsLaunchTests.swift */; };
+		05CA095A2996D0D200980F0F /* StripeApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09592996D0D200980F0F /* StripeApiClient.swift */; };
+		05CA095B2996D0D200980F0F /* StripeApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09592996D0D200980F0F /* StripeApiClient.swift */; };
+		05CA095C2996D0D200980F0F /* StripeApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09592996D0D200980F0F /* StripeApiClient.swift */; };
+		B31067C4B4435D6A4847AAAD /* Pods_stripe_stripeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A841C87EF062DEFD170625 /* Pods_stripe_stripeUITests.framework */; };
+		B9EAEE4000567AADFF36244C /* Pods_stripeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1071E83CFDE39F705BE7EDC /* Pods_stripeTests.framework */; };
+		F6CA6FEC4B5987D56984C8CE /* Pods_stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26CB97602964282365B05CE5 /* Pods_stripe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		05CA09412996CC9900980F0F /* stripeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stripeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CA09452996CC9900980F0F /* stripeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stripeUITests.swift; sourceTree = "<group>"; };
 		05CA09472996CC9900980F0F /* stripeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stripeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05CA09542996D03100980F0F /* StripeTerminal.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeTerminal.xcframework; path = Pods/StripeTerminal/StripeTerminal.xcframework; sourceTree = "<group>"; };
+		05CA09592996D0D200980F0F /* StripeApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeApiClient.swift; sourceTree = "<group>"; };
+		088CE37C2693EFF27D42DF37 /* Pods-stripe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripe.release.xcconfig"; path = "Target Support Files/Pods-stripe/Pods-stripe.release.xcconfig"; sourceTree = "<group>"; };
+		1AE5926798195698A53CEFD1 /* Pods-stripe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripe.debug.xcconfig"; path = "Target Support Files/Pods-stripe/Pods-stripe.debug.xcconfig"; sourceTree = "<group>"; };
+		1C955912240445647EC04F05 /* Pods-stripeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripeTests.release.xcconfig"; path = "Target Support Files/Pods-stripeTests/Pods-stripeTests.release.xcconfig"; sourceTree = "<group>"; };
+		26CB97602964282365B05CE5 /* Pods_stripe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stripe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B81A714E325DB913E85D247 /* Pods-stripe-stripeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripe-stripeUITests.debug.xcconfig"; path = "Target Support Files/Pods-stripe-stripeUITests/Pods-stripe-stripeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0FB27489FDD580DD1674E57 /* Pods-stripeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripeTests.debug.xcconfig"; path = "Target Support Files/Pods-stripeTests/Pods-stripeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E312E9691F1716D62744077F /* Pods-stripe-stripeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stripe-stripeUITests.release.xcconfig"; path = "Target Support Files/Pods-stripe-stripeUITests/Pods-stripe-stripeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4A841C87EF062DEFD170625 /* Pods_stripe_stripeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stripe_stripeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1071E83CFDE39F705BE7EDC /* Pods_stripeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stripeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CA6FEC4B5987D56984C8CE /* Pods_stripe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EAEE4000567AADFF36244C /* Pods_stripeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31067C4B4435D6A4847AAAD /* Pods_stripe_stripeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +105,8 @@
 				05CA093A2996CC9900980F0F /* stripeTests */,
 				05CA09442996CC9900980F0F /* stripeUITests */,
 				05CA091F2996CC9600980F0F /* Products */,
+				0AFE5A6E4F9EC182933DE9A4 /* Pods */,
+				FDE6738E7966C80FD55CC77B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +123,7 @@
 		05CA09202996CC9600980F0F /* stripe */ = {
 			isa = PBXGroup;
 			children = (
+				05CA09582996D0B800980F0F /* stripe */,
 				05CA09212996CC9600980F0F /* AppDelegate.swift */,
 				05CA09232996CC9600980F0F /* SceneDelegate.swift */,
 				05CA09252996CC9600980F0F /* ViewController.swift */,
@@ -130,6 +153,38 @@
 			path = stripeUITests;
 			sourceTree = "<group>";
 		};
+		05CA09582996D0B800980F0F /* stripe */ = {
+			isa = PBXGroup;
+			children = (
+				05CA09592996D0D200980F0F /* StripeApiClient.swift */,
+			);
+			path = stripe;
+			sourceTree = "<group>";
+		};
+		0AFE5A6E4F9EC182933DE9A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AE5926798195698A53CEFD1 /* Pods-stripe.debug.xcconfig */,
+				088CE37C2693EFF27D42DF37 /* Pods-stripe.release.xcconfig */,
+				3B81A714E325DB913E85D247 /* Pods-stripe-stripeUITests.debug.xcconfig */,
+				E312E9691F1716D62744077F /* Pods-stripe-stripeUITests.release.xcconfig */,
+				B0FB27489FDD580DD1674E57 /* Pods-stripeTests.debug.xcconfig */,
+				1C955912240445647EC04F05 /* Pods-stripeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDE6738E7966C80FD55CC77B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05CA09542996D03100980F0F /* StripeTerminal.xcframework */,
+				26CB97602964282365B05CE5 /* Pods_stripe.framework */,
+				E4A841C87EF062DEFD170625 /* Pods_stripe_stripeUITests.framework */,
+				F1071E83CFDE39F705BE7EDC /* Pods_stripeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05CA094B2996CC9900980F0F /* Build configuration list for PBXNativeTarget "stripe" */;
 			buildPhases = (
+				E490CD87003A6FCADDE12C92 /* [CP] Check Pods Manifest.lock */,
 				05CA091A2996CC9600980F0F /* Sources */,
 				05CA091B2996CC9600980F0F /* Frameworks */,
 				05CA091C2996CC9600980F0F /* Resources */,
+				A432753C945828840926A2B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05CA094E2996CC9900980F0F /* Build configuration list for PBXNativeTarget "stripeTests" */;
 			buildPhases = (
+				AC153D52D6F681515ACC6F9F /* [CP] Check Pods Manifest.lock */,
 				05CA09332996CC9900980F0F /* Sources */,
 				05CA09342996CC9900980F0F /* Frameworks */,
 				05CA09352996CC9900980F0F /* Resources */,
@@ -172,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05CA09512996CC9900980F0F /* Build configuration list for PBXNativeTarget "stripeUITests" */;
 			buildPhases = (
+				E4EDD7BD1F5359571B27F797 /* [CP] Check Pods Manifest.lock */,
 				05CA093D2996CC9900980F0F /* Sources */,
 				05CA093E2996CC9900980F0F /* Frameworks */,
 				05CA093F2996CC9900980F0F /* Resources */,
+				9617AE1BE8B447D3F4899162 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,11 +316,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9617AE1BE8B447D3F4899162 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stripe-stripeUITests/Pods-stripe-stripeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stripe-stripeUITests/Pods-stripe-stripeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stripe-stripeUITests/Pods-stripe-stripeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A432753C945828840926A2B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stripe/Pods-stripe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-stripe/Pods-stripe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-stripe/Pods-stripe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC153D52D6F681515ACC6F9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stripeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E490CD87003A6FCADDE12C92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stripe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4EDD7BD1F5359571B27F797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stripe-stripeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05CA091A2996CC9600980F0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CA095A2996D0D200980F0F /* StripeApiClient.swift in Sources */,
 				05CA09262996CC9600980F0F /* ViewController.swift in Sources */,
 				05CA09222996CC9600980F0F /* AppDelegate.swift in Sources */,
 				05CA092C2996CC9600980F0F /* stripe.xcdatamodeld in Sources */,
@@ -272,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CA095B2996D0D200980F0F /* StripeApiClient.swift in Sources */,
 				05CA093C2996CC9900980F0F /* stripeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05CA095C2996D0D200980F0F /* StripeApiClient.swift in Sources */,
 				05CA09462996CC9900980F0F /* stripeUITests.swift in Sources */,
 				05CA09482996CC9900980F0F /* stripeUITestsLaunchTests.swift in Sources */,
 			);
@@ -355,6 +521,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -416,6 +583,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -438,6 +606,7 @@
 		};
 		05CA094C2996CC9900980F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE5926798195698A53CEFD1 /* Pods-stripe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +635,7 @@
 		};
 		05CA094D2996CC9900980F0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088CE37C2693EFF27D42DF37 /* Pods-stripe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +664,7 @@
 		};
 		05CA094F2996CC9900980F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0FB27489FDD580DD1674E57 /* Pods-stripeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +685,7 @@
 		};
 		05CA09502996CC9900980F0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C955912240445647EC04F05 /* Pods-stripeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +706,7 @@
 		};
 		05CA09522996CC9900980F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B81A714E325DB913E85D247 /* Pods-stripe-stripeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +725,7 @@
 		};
 		05CA09532996CC9900980F0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E312E9691F1716D62744077F /* Pods-stripe-stripeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
