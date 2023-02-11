@@ -32,18 +32,9 @@ class StripeApiClient : ConnectionTokenProvider {
         let task = session.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
-                    // Warning: casting using `as? [String: String]` looks simpler, but isn't safe:
-                    let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                    print(json)
-                    if let secret = json?["secret"] as? String {
-                        completion(secret, nil)
-                    }
-                    else {
-                        let error = NSError(domain: "com.stripe-terminal-ios.example",
-                                            code: 2000,
-                                            userInfo: [NSLocalizedDescriptionKey: "Missing `secret` in ConnectionToken JSON response"])
-                        completion(nil, error)
-                    }
+                    let decoder = JSONDecoder()
+                    let data = try decoder.decode(TokenResponse.self, from: data)
+                    completion(data.data.connection_token.secret, nil)
                 }
                 catch {
                     completion(nil, error)

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05544B462997DB5F00184A66 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B452997DB5F00184A66 /* TokenResponse.swift */; };
+		05544B472997DB5F00184A66 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B452997DB5F00184A66 /* TokenResponse.swift */; };
+		05544B482997DB5F00184A66 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B452997DB5F00184A66 /* TokenResponse.swift */; };
+		05544B4B2997DBF800184A66 /* TokenResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B4A2997DBF800184A66 /* TokenResponseData.swift */; };
+		05544B4C2997DBF800184A66 /* TokenResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B4A2997DBF800184A66 /* TokenResponseData.swift */; };
+		05544B4D2997DBF800184A66 /* TokenResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B4A2997DBF800184A66 /* TokenResponseData.swift */; };
+		05544B4F2997DDB500184A66 /* ConnectionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B4E2997DDB500184A66 /* ConnectionToken.swift */; };
+		05544B502997DDB500184A66 /* ConnectionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B4E2997DDB500184A66 /* ConnectionToken.swift */; };
+		05544B512997DDB500184A66 /* ConnectionToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05544B4E2997DDB500184A66 /* ConnectionToken.swift */; };
 		05CA09222996CC9600980F0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09212996CC9600980F0F /* AppDelegate.swift */; };
 		05CA09242996CC9600980F0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09232996CC9600980F0F /* SceneDelegate.swift */; };
 		05CA09262996CC9600980F0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA09252996CC9600980F0F /* ViewController.swift */; };
@@ -43,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05544B452997DB5F00184A66 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		05544B4A2997DBF800184A66 /* TokenResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponseData.swift; sourceTree = "<group>"; };
+		05544B4E2997DDB500184A66 /* ConnectionToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionToken.swift; sourceTree = "<group>"; };
 		05CA091E2996CC9600980F0F /* stripe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stripe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CA09212996CC9600980F0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05CA09232996CC9600980F0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +110,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05544B442997DB2A00184A66 /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				05544B492997DBE700184A66 /* data */,
+				05544B452997DB5F00184A66 /* TokenResponse.swift */,
+			);
+			path = adapters;
+			sourceTree = "<group>";
+		};
+		05544B492997DBE700184A66 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				05544B4A2997DBF800184A66 /* TokenResponseData.swift */,
+				05544B4E2997DDB500184A66 /* ConnectionToken.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		05CA09152996CC9600980F0F = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +153,7 @@
 		05CA09202996CC9600980F0F /* stripe */ = {
 			isa = PBXGroup;
 			children = (
+				05544B442997DB2A00184A66 /* adapters */,
 				05CA09582996D0B800980F0F /* stripe */,
 				05CA09212996CC9600980F0F /* AppDelegate.swift */,
 				05CA09232996CC9600980F0F /* SceneDelegate.swift */,
@@ -425,9 +456,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				05CA095A2996D0D200980F0F /* StripeApiClient.swift in Sources */,
+				05544B4F2997DDB500184A66 /* ConnectionToken.swift in Sources */,
 				05CA09262996CC9600980F0F /* ViewController.swift in Sources */,
 				05CA09222996CC9600980F0F /* AppDelegate.swift in Sources */,
 				05CA092C2996CC9600980F0F /* stripe.xcdatamodeld in Sources */,
+				05544B462997DB5F00184A66 /* TokenResponse.swift in Sources */,
+				05544B4B2997DBF800184A66 /* TokenResponseData.swift in Sources */,
 				05CA09242996CC9600980F0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +470,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05544B502997DDB500184A66 /* ConnectionToken.swift in Sources */,
+				05544B4C2997DBF800184A66 /* TokenResponseData.swift in Sources */,
 				05CA095B2996D0D200980F0F /* StripeApiClient.swift in Sources */,
+				05544B472997DB5F00184A66 /* TokenResponse.swift in Sources */,
 				05CA093C2996CC9900980F0F /* stripeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +484,10 @@
 			files = (
 				05CA095C2996D0D200980F0F /* StripeApiClient.swift in Sources */,
 				05CA09462996CC9900980F0F /* stripeUITests.swift in Sources */,
+				05544B482997DB5F00184A66 /* TokenResponse.swift in Sources */,
+				05544B512997DDB500184A66 /* ConnectionToken.swift in Sources */,
 				05CA09482996CC9900980F0F /* stripeUITestsLaunchTests.swift in Sources */,
+				05544B4D2997DBF800184A66 /* TokenResponseData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

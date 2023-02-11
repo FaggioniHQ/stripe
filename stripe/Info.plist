@@ -4,12 +4,16 @@
 <dict>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Bluetoth gay</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Fire in the ghole</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Blue gaytore</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Activo</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Activo Largo</string>
+	<key>NSLocationDefaultAccuracyReduced</key>
+	<string>Fire Location Homie</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
