@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  stripe
-//
-//  Created by HQ on 10/2/23.
-//
-
 import UIKit
 import CoreData
 import StripeTerminal
@@ -13,7 +6,6 @@ import StripeTerminal
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        print("init-0")
         Terminal.setTokenProvider(StripeApiClient.shared)
         // Override point for customization after application launch.
         return true

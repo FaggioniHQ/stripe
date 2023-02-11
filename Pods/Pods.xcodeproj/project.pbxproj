@@ -465,6 +465,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		06C63C5C2954B861A0C13BDCD8DA047F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D1BF521ADC710FA5BEF951021A81C8 /* StripeTerminal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		2B4A0AF8B0A328FB526057EAA946D84C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B732D727C47EFBFB7B91B1A0FEDFA77 /* Pods-stripeTests.release.xcconfig */;
@@ -503,14 +521,14 @@
 			};
 			name = Release;
 		};
-		44EFA2F5D3F4B9596584B58B229BFAD8 /* Debug */ = {
+		3FAEE21F0E9BABE5C1308F14F36AC654 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF62736F6CCA9D53B0441567346769B9 /* StripeTerminal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -835,24 +853,6 @@
 			};
 			name = Debug;
 		};
-		E9C8D11638BDD59CF67A3E21CA02B779 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0D1BF521ADC710FA5BEF951021A81C8 /* StripeTerminal.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -877,8 +877,8 @@
 		D77C3FE5EDA14ECC7CA278A938A4FA1F /* Build configuration list for PBXAggregateTarget "StripeTerminal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44EFA2F5D3F4B9596584B58B229BFAD8 /* Debug */,
-				E9C8D11638BDD59CF67A3E21CA02B779 /* Release */,
+				3FAEE21F0E9BABE5C1308F14F36AC654 /* Debug */,
+				06C63C5C2954B861A0C13BDCD8DA047F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,7 +6,7 @@ target 'stripe' do
   use_frameworks!
   
   # Pods for stripe
-  pod 'StripeTerminal', '~> 2.13.0'
+  pod 'StripeTerminal', '~> 2.17.1'
 
   target 'stripeTests' do
     inherit! :search_paths

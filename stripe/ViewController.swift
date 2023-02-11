@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  stripe
-//
-//  Created by HQ on 10/2/23.
-//
-
 import UIKit
 import StripeTerminal
 import CoreLocation
@@ -47,7 +40,6 @@ class ViewController: UIViewController, DiscoveryDelegate, BluetoothReaderDelega
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.requestAlwaysAuthorization()
-        print("view-0")
         self.discoverReadersAction()
         // Do any additional setup after loading the view.
     }
@@ -55,7 +47,7 @@ class ViewController: UIViewController, DiscoveryDelegate, BluetoothReaderDelega
     
     func discoverReadersAction() {
         let config = DiscoveryConfiguration(
-          discoveryMethod: .bluetoothScan,
+            discoveryMethod : .localMobile,
           simulated: false
         )
 
