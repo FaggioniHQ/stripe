@@ -11,9 +11,11 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Activo</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Activo Largo</string>
+	<string>The Location is required to Process Payment on App</string>
 	<key>NSLocationDefaultAccuracyReduced</key>
 	<string>Fire Location Homie</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location In Usage</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
