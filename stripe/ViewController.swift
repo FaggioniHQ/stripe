@@ -11,6 +11,9 @@ import CoreLocation
 
 class ViewController: UIViewController, DiscoveryDelegate, BluetoothReaderDelegate, CLLocationManagerDelegate {
     
+    let readerMessageLabel = UILabel(frame: .zero)
+    var collectCancelable: Cancelable? = nil
+    
     var locationManager: CLLocationManager?
     func reader(_ reader: Reader, didReportAvailableUpdate update: ReaderSoftwareUpdate) {
         
@@ -76,6 +79,7 @@ class ViewController: UIViewController, DiscoveryDelegate, BluetoothReaderDelega
             connectionConfig: connectionConfig) { reader, error in
             if let reader = reader {
                 print("Successfully connected to reader: \(reader)")
+                self.checkoutAction()
             } else if let error = error {
                 print("connectBluetoothReader failed: \(error)")
             }
@@ -89,6 +93,38 @@ class ViewController: UIViewController, DiscoveryDelegate, BluetoothReaderDelega
                 print("connectLocalMobileReader failed: \(error)")
             }*/
     }
+    
+    func checkoutAction() {
+            let params = PaymentIntentParameters(amount: 10000, currency: "usd")
+            Terminal.shared.createPaymentIntent(params) { createResult, createError in
+                if let error = createError {
+                    print("createPaymentIntent failed: \(error)")
+                } else if let paymentIntent = createResult {
+                    print("createPaymentIntent succeeded")
+                    self.collectCancelable = Terminal.shared.collectPaymentMethod(paymentIntent) { collectResult, collectError in
+                    if let error = collectError {
+                        print("collectPaymentMethod failed: \(error)")
+                    }
+                    else if let paymentIntent = collectResult {
+                        print("collectPaymentMethod succeeded")
+                        // ... Process the payment
+                        Terminal.shared.processPayment(paymentIntent) { processResult, processError in
+                          if let error = processError {
+                              print("processPayment failed: \(error)")
+                          } else if let processPaymentPaymentIntent = processResult {
+                              print("processPayment succeeded")
+                              // Notify your backend to capture the PaymentIntent
+                              //manual
+                          }
+                      }
+                    }
+                }
+                    // ...
+                }
+
+            }
+        }
+
 
 
 }
